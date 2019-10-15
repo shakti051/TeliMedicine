@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/transparent_black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adress"
+            android:textSize="14dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/pathAddressID"
+            android:padding="2dp"
+            android:drawableLeft="@drawable/path_add_img"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact No."
+            android:textSize="14dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/pathContactID"
+            android:drawableLeft="@drawable/path_contact"
+            android:padding="2dp"
+            android:drawablePadding="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/currentLocationTv"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Book Your Test"
+        android:textSize="17dp"
+        android:padding="4dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorDarkGrey"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/testListId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        />
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.tele.medicine.utilities.CircularImageView
+                android:id="@+id/circularImgViewTv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img_blood"
+                app:border_color="#EEEEEE"
+                android:layout_gravity="start"
+                app:border_width="4dp"
+                app:shadow="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/doctorNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Dr.Niharika"
+                    android:textColor="#000000"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:id="@+id/qualificationTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MD-Dermatology, Venereology"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/clinicNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skinology Clinic"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/clinicLocationTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Delhi"
+                    android:textSize="14dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/feesTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="8dp"
+                android:text="300 INR"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <Button
+                    android:id="@+id/onlineConsultBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:text="Consult"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="36dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPrimary"/>
+
+                <Button
+                    android:id="@+id/appointmentsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:text="Book"
+                    android:layout_marginRight="5dp"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="36dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPrimary"/>
+
+                </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+

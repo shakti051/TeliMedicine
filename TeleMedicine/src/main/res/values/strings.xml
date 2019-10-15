@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TeleMedicine</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="mornig_slot"><b>Morning</b> before 12 pm</string>
+    <string name="afternoon_slot"><b>After Noon</b> 12 - 4 pm</string>
+    <string name="evining_slot"><b>Evening</b> 4 - 8 pm</string>
+
+    <string name="search_doctor_url">http://49.50.64.226:9000/ords/consultit/searchbylocation/</string>
+
+    <string name="nearbypathlap">Search your near by Pathlabs</string>
+
+    <string name="facebook_app_id">302352396788507</string>
+</resources>

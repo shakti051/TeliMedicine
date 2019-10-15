@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/fromTopSlideDownTv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableBottom="@drawable/down_arrow_icon"
+        android:text="View Personal Details"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:id="@+id/userDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <!-- Name Label -->
+            <EditText
+                android:id="@+id/userNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#000000"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:enabled="false"
+                android:background="@drawable/line_et"/>
+
+        <EditText
+            android:id="@+id/ageEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="28"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <!-- Mobile Number Label -->
+        <EditText
+            android:id="@+id/mobNumberEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9746574646"
+            android:textColor="#000000"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingLeft="8dp"
+            android:phoneNumber="true"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <Spinner
+            android:id="@+id/spGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+        <!-- Email Label -->
+            <EditText
+                android:id="@+id/input_emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="apm@gmail.com"
+                android:textColor="#000000"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp"
+                android:enabled="false"
+                android:background="@drawable/line_et"/>
+
+
+
+        <!--Address Label-->
+        <EditText
+            android:id="@+id/addressEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="address"
+            android:textColor="#000000"
+            android:inputType="text"
+            android:enabled="false"
+            android:singleLine="true"
+            android:paddingLeft="8dp"
+            android:background="@drawable/line_et"/>
+
+        <Button
+            android:id="@+id/editProceedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Edit"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="visible"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/saveProceedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Save"
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <!--Add Family Member-->
+    <LinearLayout
+        android:id="@+id/userFamilyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Add Family Member"
+            android:gravity="left|center"
+            android:paddingLeft="4dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:background="@color/colorLightGrey"/>
+
+        <!-- family Name Label -->
+        <EditText
+            android:id="@+id/familyNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Name"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:focusable="true"
+            android:background="@drawable/line_et"/>
+
+            <EditText
+                android:id="@+id/familyDobEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Age"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:background="@drawable/line_et"/>
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:src="@drawable/my_account_tab_grey"/>
+        </LinearLayout>-->
+
+        <Spinner
+            android:id="@+id/spfamilyMemberGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+
+        <Spinner
+            android:id="@+id/spfamilyRelation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+        <!-- Email Label -->
+        <EditText
+            android:id="@+id/familyEmailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="apm@gmail.com"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="8dp"
+            android:background="@drawable/line_et"/>
+
+        <Button
+            android:id="@+id/userFamilySaveProceedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:text="Save"
+            android:padding="4dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/fromButtomSlideUpTv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:drawableTop="@drawable/up_arrow_icon"
+        android:text="Add Family"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:visibility="visible"
+        android:gravity="center"/>
+
+
+    </RelativeLayout>

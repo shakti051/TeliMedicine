@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_weight="1"
+        android:layout_margin="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/selectStartTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:padding="4dp"
+                android:drawableTop="@drawable/clock_icon"/>
+
+            <TextView
+                android:id="@+id/setStartTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textview_bg"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:id="@+id/selectEndTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:padding="4dp"
+                android:drawableTop="@drawable/clock_icon"/>
+
+            <TextView
+                android:id="@+id/setEndTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textview_bg"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDarkGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/selectTimeSlotLabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Select Time Slot"
+                android:textSize="17dp"
+                />
+            <Spinner
+                android:id="@+id/spTimeSlot"
+                android:layout_width="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+            />
+
+            </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorDarkGrey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/selectFromDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From Date"
+                android:padding="4dp"
+                android:drawableTop="@drawable/calender_icon"/>
+
+            <TextView
+                android:id="@+id/setFromDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textview_bg"
+               />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:id="@+id/selectToDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Date"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"
+                android:drawableTop="@drawable/calender_icon"/>
+
+            <TextView
+                android:id="@+id/setToDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textview_bg"
+               />
+
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/calenderDaysMgmtRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical" />
+
+        <!--<CheckBox
+            android:id="@+id/chkIos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Monday" />
+
+        <CheckBox
+            android:id="@+id/chkAndroid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:layout_weight="1"
+             />
+
+        <CheckBox
+            android:id="@+id/chkWindows"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <CheckBox
+                android:id="@+id/chkThursday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thursday" />
+
+            <CheckBox
+                android:id="@+id/chkFriday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/chkSat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:layout_weight="1"/>
+-->
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/calMgmtPreceedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorDarkGrey"/>
+
+</LinearLayout>

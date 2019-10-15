@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Name Label -->
+            <EditText
+                android:id="@+id/userNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_et"
+                android:hint="Name"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/dobEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_et"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingTop="17dp"
+                android:text="Date Of Birth"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <!-- Marital Label -->
+            <!-- <EditText
+                 android:id="@+id/mobNumberEt"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="9746574646"
+                 android:textColor="#000000"
+                 android:inputType="phone"
+                 android:maxLength="10"
+                 android:paddingLeft="8dp"
+                 android:phoneNumber="true"
+                 android:enabled="false"
+                 android:background="@drawable/line_et"/>-->
+
+            <Spinner
+                android:id="@+id/spGender"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <Spinner
+                android:id="@+id/spMaritalStatus"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:id="@+id/idProofLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Id Proof : "
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/adharCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Aadhar Card" />
+
+                <CheckBox
+                    android:id="@+id/voterCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Voter Id Card" />
+
+                <CheckBox
+                    android:id="@+id/passportCB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Passport" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/uploadIdPhotoButtonID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Photo"
+                    android:textAllCaps="false" />
+
+                <EditText
+                    android:id="@+id/uploadIdPhotoETID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/line_et"
+                    android:enabled="false"
+                    android:hint="Select Id's Photo"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/residentialAddLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Residential Address : "
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <!--Address Label-->
+                <EditText
+                    android:id="@+id/firstResAddressEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_et"
+                    android:enabled="true"
+                    android:hint="First Line"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/secondResAddressEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_et"
+                    android:enabled="true"
+                    android:hint="Second Line"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/officeAddLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Office Address : "
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <!--Address Label-->
+                <EditText
+                    android:id="@+id/firstOfcAddressEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_et"
+                    android:enabled="true"
+                    android:hint="First Line"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/secondOfcAddressEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_et"
+                    android:enabled="true"
+                    android:hint="Second Line"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spCountry"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/uploadUserPhotoButtonID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Photo"
+                    android:textAllCaps="false" />
+
+                <EditText
+                    android:id="@+id/uploadUserPhotoETID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/line_et"
+                    android:enabled="false"
+                    android:hint="Select User Photo"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/summitDetails"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="4dp"
+                android:text="Submit"
+                android:textColor="@color/colorWhite" />
+
+            <!--<Button
+                android:id="@+id/editDetails"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="4dp"
+                android:text="Edit"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone" />-->
+
+            <Button
+                android:id="@+id/addFamilyDetails"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimary"
+                android:padding="4dp"
+                android:text="Add Member Details"
+                android:textColor="@color/colorWhite" />
+
+            <!--<Button
+                android:id="@+id/viewFamilyDetails"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimary"
+                android:padding="4dp"
+                android:text="View Member Details"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone" />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

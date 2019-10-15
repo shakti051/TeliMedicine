@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scollViewID">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <ImageView
+       android:id="@+id/advertisIv"
+       android:layout_width="match_parent"
+       android:layout_height="124dp"
+       android:layout_marginTop="6dp"
+       android:focusable="true"
+       android:background="@drawable/banner1"/>
+
+    <LinearLayout
+        android:id="@+id/findDoctorsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tab_background_selector"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/find_doctors_icon"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/findDoctorTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Doctors"
+                android:padding="2dp"
+               android:textColor="#000000"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/subTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Consult online or book appointment"
+                android:textSize="12dp"/>
+            </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/arrow_icon_grey"/>
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="10dp"
+        android:background="#BDBDBD"/>
+
+    <LinearLayout
+        android:id="@+id/pathLabTestLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tab_background_selector"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/my_account_tab_grey"/>
+
+        <LinearLayout
+            android:id="@+id/findLabTestLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/findPathLabTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pathology Lab Test"
+                android:padding="2dp"
+                android:textColor="#000000"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/pathSubTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Home collection and online reports "
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/arrow_icon_grey"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="10dp"
+        android:background="#BDBDBD"/>
+
+    <LinearLayout
+        android:id="@+id/findpharmacyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:background="@drawable/tab_background_selector"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/pharmacy_icon"/>
+
+        <LinearLayout
+            android:id="@+id/pharmacyOrderLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Pharmacy"
+                android:padding="2dp"
+                android:textColor="#000000"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/arrow_icon_grey"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrey"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specialties"
+            android:textSize="17dp"
+            android:layout_marginLeft="8dp"
+            android:padding="4dp"/>
+
+        </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="1050dp"
+        android:columnWidth="160dp"
+        android:numColumns="2"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="4dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />
+
+  </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

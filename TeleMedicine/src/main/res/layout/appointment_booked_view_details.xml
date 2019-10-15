@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/bookedAppointmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/appointmentsRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/noAppointmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/no_appointment_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="No Appointments Booked Yet"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:text="Find the Best doctors in your locality and \nbook an appointment.  "/>
+
+        <Button
+            android:id="@+id/bookAppointmentBtn"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:textSize="12dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="55dp"
+            android:text="Book Appointment"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        android:layout_margin="4dp">
+
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/selectStartTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time"
+            android:padding="4dp"
+            android:drawableTop="@drawable/clock_icon"/>
+
+        <TextView
+            android:id="@+id/setStartTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/textview_bg"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <TextView
+            android:id="@+id/selectEndTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time"
+            android:padding="4dp"
+            android:drawableTop="@drawable/clock_icon"/>
+
+        <TextView
+            android:id="@+id/setEndTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/textview_bg" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorDarkGrey"/>
+
+    <Spinner
+        android:id="@+id/spDays"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+    <Spinner
+        android:id="@+id/spStates"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+    <Spinner
+        android:id="@+id/spCity"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorDarkGrey"/>
+
+    <Button
+        android:id="@+id/createOPDBtn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:textSize="14dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+  </android.support.v7.widget.CardView>
+</LinearLayout>

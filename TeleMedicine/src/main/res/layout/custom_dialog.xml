@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:gravity="center">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/popElement"
+    android:background="@drawable/boderframe"
+    android:layout_margin="20dp"
+    >
+    <TextView
+        android:id="@+id/openGalleryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick from gallery"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:padding="6dp"
+        android:drawablePadding="6dp"
+        android:drawableLeft="@drawable/calender_icon"
+        android:gravity="left|center"/>
+
+    <TextView
+        android:id="@+id/openCameraTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick from camera"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:padding="6dp"
+        android:layout_marginLeft="4dp"
+        android:drawablePadding="6dp"
+        android:drawableLeft="@drawable/clock_icon"
+        android:gravity="left|center"/>
+
+   <!-- <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:max="4"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        />-->
+
+    <TextView
+        android:id="@+id/notNowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="Not Now"
+        android:textSize="16dp"
+        android:gravity="center"/>
+
+</LinearLayout>
+ </LinearLayout>

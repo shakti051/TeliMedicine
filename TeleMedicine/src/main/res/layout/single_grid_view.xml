@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/gridImageViewID"
+        android:layout_width="160dp"
+        android:layout_height="88dp"
+        android:layout_margin="4dp"
+        android:src="@drawable/dermatologist_bg" />
+
+    <TextView
+        android:id="@+id/gridTextViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorWhite"
+        android:text="Dermatologist" />
+
+</RelativeLayout>

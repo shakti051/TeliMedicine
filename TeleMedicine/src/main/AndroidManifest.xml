@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tele.medicine">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.vehiclevaluation.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- To access accounts configured on device -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- To use account credentials -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Login">
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--<activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />-->
+
+        <activity
+            android:name=".GenrateHashKey">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+
+        <activity android:name="com.tele.medicine.HomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.tele.medicine.LoginScreen"/>
+        <activity android:name="com.tele.medicine.SignUp"/>
+        <activity android:name="com.tele.medicine.SearchResultActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.tele.medicine.SpecialityWiseDoctorsScreen"/>
+        <activity android:name="com.tele.medicine.UserProfileDetails"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.tele.medicine.AppointmentBookTimeSlot"/>
+        <activity android:name="com.tele.medicine.AppointmentBookedViewDetails"/>
+        <activity android:name="com.tele.medicine.ConsultOnlineDoctor"/>
+        <activity android:name="com.tele.medicine.AppoinmentConfirmation"/>
+        <activity android:name="com.tele.medicine.AppointmentPaymentMode"/>
+        <activity android:name="com.tele.medicine.DoctorClinicInformation"/>
+        <activity android:name="com.tele.medicine.LocationSearch"/>
+        <activity android:name="com.tele.medicine.doctordashboard.HomePage"/>
+        <activity android:name="com.tele.medicine.doctordashboard.DoctorProfileDetails"/>
+        <activity android:name="com.tele.medicine.doctordashboard.BookedPatientConfirmation"/>
+        <activity android:name="com.tele.medicine.doctordashboard.FixedAppointment"/>
+        <activity android:name="com.tele.medicine.doctordashboard.ViewPatientDetails"/>
+        <activity android:name="com.tele.medicine.doctordashboard.E_PrescriptionForm"/>
+        <activity android:name="com.tele.medicine.doctordashboard.DoctorCalenderManagement"/>
+        <activity android:name="com.tele.medicine.doctordashboard.DoctorOpdManagement"/>
+        <activity android:name="com.tele.medicine.pharmacydashboard.PharmacyHomePage"/>
+        <activity android:name="com.tele.medicine.PharmacySearchResult"/>
+        <activity android:name="com.tele.medicine.PharmacyViewDetails"/>
+        <activity android:name="com.tele.medicine.AppointmentBookTimeSlotNew"/>  <!--new class for AppointmentBookTimeSlotNew-->
+                                     <!--new-->
+        <activity android:name="com.tele.medicine.PharmacyLocationSearch"/>  <!--new class for pharmacysearchresult-->
+        <activity android:name="com.tele.medicine.PathoLogySearchResult"/>
+        <activity android:name="com.tele.medicine.DrSuggestPathLogy"/>
+        <activity android:name="com.tele.medicine.PathologyTestViewDetails"/>
+
+        <activity
+            android:name=".UserProfileDetailsNew"
+            android:windowSoftInputMode="adjustPan">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+
+        <activity
+            android:name=".AddFamilyDetails"
+            android:windowSoftInputMode="adjustPan">
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".ViewUserDetails">
+             <!--<intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>-->
+        </activity>
+        <activity
+        android:name=".ViewMemberDetails">
+        <!--<intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+    </activity>
+
+        <activity
+            android:name=".ViewMemberDetailsList">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+
+        <!--Google Api Key By Rohit-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value=" AIzaSyA2xN6ZU2a-IbiCET_YMRm9hiPfvn8iTSE"/>
+
+        <activity android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+         <!--facebook id-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
+        <!--Google Api Key By Dharam-->
+        <!--<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA596LZdIhm3DnMfGN9Lu1fZE3vKjQMIDc"/>-->
+
+    </application>
+
+</manifest>

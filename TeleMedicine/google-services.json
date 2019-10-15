@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "647289928918",
+    "project_id": "firebase-telemedicine"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647289928918:android:09d6ee44a5906374",
+        "android_client_info": {
+          "package_name": "com.tele.medicine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647289928918-ptg89msphtv40bafai5tncnv4h7oo4h8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tele.medicine",
+            "certificate_hash": "D1D2D844B9B95C07D448EB11D4195720FB3731F8"
+          }
+        },
+        {
+          "client_id": "647289928918-vftjtbsdio21tqm4e98k1o8hgo9jo903.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEGpGmpzDTGL57FyE6fqlkYwqUEJ1dZlc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

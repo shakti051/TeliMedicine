@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/doctorProfileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:background="@drawable/layout_selector"
+        android:orientation="vertical">
+
+        <com.tele.medicine.utilities.CircularImageView
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/circularImgViewTv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:border_color="#EEEEEE"
+            android:src="@drawable/my_account_tab_grey"
+            app:border_width="4dp"
+            app:shadow="true" />
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="4dp"
+             android:layout_weight="1"
+             android:orientation="vertical">
+ -->
+        <TextView
+            android:id="@+id/doctorNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr.A K Singh"
+            android:layout_marginTop="3dp"
+            android:textColor="#000000"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/qualificationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Profile"
+            android:textSize="14dp"
+            android:layout_marginBottom="4dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </LinearLayout>
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="4dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/arrow_icon_grey"/>-->
+
+    <!-- </LinearLayout>-->
+
+    <!-- <TextView
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:text="My Folders"
+         android:gravity="left|center"
+         android:paddingLeft="10dp"
+         android:textSize="16dp"
+         android:layout_marginTop="5dp"
+         android:background="@color/colorLightGrey"/>
+ -->
+    <LinearLayout
+        android:id="@+id/accountConsultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/tab_background_selector"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/fixedAppointmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/consults_icon"/>
+
+            <TextView
+                android:id="@+id/consultTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fixed Appointments"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:gravity="left|center"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/arrow_icon_grey"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accountAppointmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/calenderMgmtLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/appointments_icon"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Calender Managment"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:gravity="left|center"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/arrow_icon_grey"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/opdManagmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:id="@+id/opdLayoutMgmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/opd_icon"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="OPD Managment"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="left|center"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/arrow_icon_grey"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Files"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:textSize="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorLightGrey"/>
+
+    <LinearLayout
+        android:id="@+id/accountPrescriptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/tab_background_selector"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/prescription_icon"/>
+
+            <TextView
+                android:id="@+id/filePrescriptionTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Prescriptions"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:gravity="left|center"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/arrow_icon_grey"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accountDocumentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/tab_background_selector"
+        android:layout_marginTop="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/document_icon"/>
+
+
+            <TextView
+                android:id="@+id/fileDocumentTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Documents"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:gravity="left|center"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/arrow_icon_grey"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

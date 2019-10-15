@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+        <!-- Name Label -->
+        <EditText
+            android:id="@+id/userNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr.A K Singh"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <!-- Qualification Label -->
+        <EditText
+            android:id="@+id/doctorQualificationEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MD, MBBS"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <!-- Experience Label -->
+        <EditText
+            android:id="@+id/doctorSpecialtyEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dermatologist"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <!-- Experience Label -->
+        <EditText
+            android:id="@+id/doctorExperienceEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <EditText
+            android:id="@+id/dobEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:inputType="number"
+            android:editable="false"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <Spinner
+            android:id="@+id/spGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+        <!-- Email Label -->
+        <EditText
+            android:id="@+id/input_emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ak@gmail.com"
+            android:inputType="textEmailAddress"
+            android:editable="false"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <!-- Consulting Fee Label -->
+        <EditText
+            android:id="@+id/doctorConsultingFeeEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INR 300"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <!-- HospitalName Label -->
+        <EditText
+            android:id="@+id/hospitalNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <!-- Mobile Number Label -->
+        <EditText
+            android:id="@+id/mobNumberEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9746574646"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginTop="5dp"
+            android:phoneNumber="true"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+        <!--Address Label-->
+        <EditText
+            android:id="@+id/addressEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="address"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:enabled="false"
+            android:background="@drawable/line_et"/>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="1dp">
+
+    <Button
+            android:id="@+id/editProceedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Edit"
+            android:visibility="visible"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/saveProceedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Save"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+</LinearLayout>
